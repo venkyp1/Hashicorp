@@ -23,13 +23,17 @@
 
 #### Version 
 venky-MacPro> terraform version
+```
 Terraform v0.12.18
 + provider.aws v2.43.0
 venky-MacPro>
+```
 
 #### Check the configuration
 venky-MacPro> terraform validate
+```
 Success! The configuration is valid.
+```
 
 venky-MacPro>
 
