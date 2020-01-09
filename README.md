@@ -15,3 +15,5 @@
           Run: terraform destroy
     
 
+## Graphical View of the plan
+![Infrastructure View] (https://github.com/venkyp1/Hashicorp/blob/master/graph.svg)
