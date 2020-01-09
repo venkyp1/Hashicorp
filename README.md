@@ -35,7 +35,8 @@ venky-MacPro>
 
 #### Create a plan
 
-venky-MacPro> terraform plan --out awsplan
+#### venky-MacPro> terraform plan --out awsplan
+```
 Refreshing Terraform state in-memory prior to plan...
 The refreshed state will be used to calculate this plan, but will not be
 persisted to local or remote state storage.
@@ -58,11 +59,12 @@ To perform exactly these actions, run the following command to apply:
     terraform apply "awsplan"
 
 venky-MacPro>
+```
 
 #### Verify all config detail
 
-venky-MacPro> terraform show awsplan
-
+#### venky-MacPro> terraform show awsplan
+```
 An execution plan has been generated and is shown below.
 Resource actions are indicated with the following symbols:
   + create
@@ -316,12 +318,13 @@ venky-MacPro>
 #### Create the infrastructure
 
 venky-MacPro> terraform apply awsplan
-
+```
 
 
 #### Destroy the infrastructure
 
 venky-MacPro> terraform destroy
+```
 aws_vpc.venky_vpc: Refreshing state... [id=vpc-0871b761782add56f]
 aws_egress_only_internet_gateway.egress_gw: Refreshing state... [id=eigw-09c408950a581d6e6]
 aws_internet_gateway.mygw: Refreshing state... [id=igw-0bf00f49f141b32d2]
@@ -374,3 +377,4 @@ aws_vpc.venky_vpc: Destruction complete after 0s
 
 Destroy complete! Resources: 8 destroyed.
 venky-MacPro>
+```
