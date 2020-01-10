@@ -14,7 +14,21 @@
     *  To destroy the infrastructure
           Run: terraform destroy
 
+## Additional configuration details
 
+```
+
+One can also define separate configuration files to create AWS infrastructure.
+
+Instances.tf - Instance specific details
+Provider.tf  - AWS provider access details (Keys, region)
+Variables.tf - Variables to be passed later
+terraform.tfvars - To specify persistent variables
+
+One can also use environment variable(s) which starts with TF_VAR_name
+  For example, TF_VAR_instance_count corresponds to the variable instance_count
+
+```
 
 ## Graphical View of the plan
 ![Infrastructure View](https://github.com/venkyp1/Hashicorp/blob/master/graph.svg)
