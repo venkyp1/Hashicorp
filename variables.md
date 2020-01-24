@@ -2,7 +2,7 @@
 
 ### Variables for credentials
 ```
- When comes to resource access, often some form of credentials are needed. So when included terraform as part 
+ When comes to resource access, often some form of credentials are needed. So when running terraform as part 
 of CI/CD, the security credentials should be available as part of automatic pipeline process. Hardcoding these 
 secrets can get them exposed as part of log files and so is a security violation.
 
